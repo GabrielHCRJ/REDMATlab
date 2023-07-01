@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Vídeo em Loop</title>
     <style>
-        em {
-            color: red
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero laboriosam sint maxime quia perferendis voluptates accusantium iste minima aperiam minus quam ducimus magni, molestiae expedita! Velit deleniti eveniet, non dolor eaque, quibusdam fuga ducimus odit aperiam nihil officia eos sed dolorum sint, autem vel consectetur magni nemo iste excepturi necessitatibus!</p>
-    
+    <video src="Dom_Img_Seno.mp4" autoplay loop muted>
+        Desculpe, seu navegador não suporta o elemento de vídeo.
+    </video>
 </body>
 </html>
