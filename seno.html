@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Função seno</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden; /* Impede a exibição da barra de rolagem */
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1; /* Ocupa todo o espaço vertical disponível */
+    }
+    
+    h1 {
+      color: white;
+      font-size: 5vw;
+      margin-bottom: 2vw;
+      margin-top: 0;
+    }
+    
+    video {
+      width: 90%;
+      max-width: 1028px;
+      height: auto;
+      margin-top: 0;
+    }
+    
+    .buttons {
+      margin-top: -4vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .buttons button {
+      margin: 0 1vw;
+      padding: 1vw 2vw;
+      font-size: 3vw;
+      background-color: blue    ;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Função seno:</h1>
+    <video src="12_Dom_Img_Seno.mp4" autoplay loop muted></video>
+    <div class="buttons">
+      <button onclick="window.location.href='pagina1.html'">Opção A</button>
+      <button onclick="window.location.href='pagina2.html'">Opção B</button>
+      <button onclick="window.location.href='pagina3.html'">Opção C</button>
+      <button onclick="window.location.href='pagina4.html'">Opção D</button>
+    </div>
+  </div>
+</body>
+</html>
