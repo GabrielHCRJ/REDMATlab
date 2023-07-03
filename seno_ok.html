@@ -25,7 +25,7 @@
     }
     
     h1 {
-      color: white;
+        color: white;
       font-size: 5vw;
       margin-bottom: 2vw;
       margin-top: 0;
@@ -33,39 +33,46 @@
     
     video {
       width: 90%;
-      margin-top: -3vw;
       max-width: 1028px;
       height: auto;
       margin-top: 0;
     }
     
     .buttons {
-      
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
+  margin-top: -4vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
     
-    .buttons button {
-      margin: 0 1vw;
-      padding: 1vw 2vw;
-      font-size: 3vw;
-      background-color: blue    ;
+.buttons button {
+      position: absolute;
+      right: 0;
+      margin-left: 10px;
+      bottom: -30px;
+      margin-right: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: blue;
       color: white;
       border: none;
       cursor: pointer;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Função seno:</h1>
-    <video src="5_periodicidade_seno.mp4" autoplay loop muted></video>
+    <video src="12_Dom_Img_Seno.mp4" autoplay loop muted></video>
     <div class="buttons">
-      <button onclick="window.location.href='seno_ok.html'">Opção A</button>
-      <button onclick="window.location.href='seno_erro.html'">Opção B</button>
-      <button onclick="window.location.href='seno_erro.html'">Opção C</button>
-      <button onclick="window.location.href='seno_erro.html'">Opção D</button>
+    
+      <button onclick="window.location.href='pagina1.html'">Próxima Pergunta</button>
     </div>
   </div>
 </body>
