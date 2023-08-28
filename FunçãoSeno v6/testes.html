@@ -1,0 +1,98 @@
+<!-- Temos uma caixa chamda solution-info e dentro outra chamada btn-group onde dentro tem um botão chamado -info-btn exit-btn e outro chamado info-btn continue-btn-->
+
+<div class="solution-info">
+    <h2>Guia da Ficha</h2>
+    <span class="sol-info">1. Falar como funciona a atividade.</span>  
+    <span class="sol-info">2. Mais informações_____________________.</span> 
+    <span class="sol-info">3. Lorem ipsum dolor sit amet consectetur adipisicing.</span> 
+    <span class="sol-info">4. Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  
+    <span class="sol-info">5. Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  
+
+    <div class="sol-btn-group">
+        <button class="sol-info-btn sol-exit-btn">Sair</button>
+        <a href="#" class="sol-info-btn sol-continue-btn">Continue</a>
+    </div>
+</div>
+
+<!-- o style do pop-info que estamos usando como referencia-->
+
+
+.solution-info {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-65%) scale(.25);
+    width:500px ;
+    background: #fff;
+    border-radius:6px;
+    padding: 10px 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+}
+
+.solution-info.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-65%) scale(1);
+
+}
+
+.solution-info h2 {
+    font-size: 50px;
+    color: #c40094;
+
+}
+
+.solution-info .sol-info {
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: 4px 0;
+
+}
+
+.solution-info .sol-btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-top: 1px solid #999;
+    margin-top: 10px;
+    padding:15px 0 7px;
+}
+
+.solution-info .sol-btn-group .sol-info-btn{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    height: 45px;    
+    background: #c40094;
+    border: 2px solid #c40094;
+    outline: none;
+    border-radius: 6px;   
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.solution-info .sol-btn-group .sol-info-btn:nth-child(1){
+    background: transparent;
+    color:#c40094;
+}
+
+.solution-info .sol-btn-group .sol-info-btn:nth-child(1):hover{
+    background: #c40094;
+    color:#fff;
+}
+
+.solution-info .sol-btn-group .sol-info-btn:nth-child(2):hover{
+    background: #950170;
+    border-color: #950170
+}
+
